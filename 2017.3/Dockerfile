@@ -3,13 +3,12 @@ MAINTAINER maxivak@gmail.com
 
 WORKDIR /opt/youtrack
 
-ENV YOUTRACK_VERSION 2017.3
-ENV YOUTRACK_BUILD 35488
+ENV YOUTRACK_VERSION 2017.3.35488
 
 
 RUN mkdir -p /youtrack /opt/youtrack/data /opt/youtrack/backup /opt/youtrack/bin
 
-RUN wget -nv https://download.jetbrains.com/charisma/youtrack-${YOUTRACK_VERSION}.${YOUTRACK_BUILD}.jar -O /opt/youtrack/bin/youtrack-$YOUTRACK_VERSION.jar
+RUN wget -nv https://download.jetbrains.com/charisma/youtrack-${YOUTRACK_VERSION}.jar -O /opt/youtrack/bin/youtrack-$YOUTRACK_VERSION.jar
 
 RUN ln -s /opt/youtrack/bin/youtrack-$YOUTRACK_VERSION.jar /opt/youtrack/bin/youtrack.jar
 
