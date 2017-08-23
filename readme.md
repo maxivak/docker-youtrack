@@ -4,7 +4,7 @@ This repository contains a Docker image of JetBrains [YouTrack](http://www.jetbr
 
 Versions included:
 * YouTrack 2017.3
-* Based on YouTrack 6.5.16953 (December, 10 2015)
+* YouTrack 6.5.16953 (December, 10 2015)
 
 # Build
 
